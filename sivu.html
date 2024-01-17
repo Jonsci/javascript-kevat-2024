@@ -7,13 +7,19 @@
 </head>
 <body>
     <center>
-        <h1>Sivusto</h1>
-
+        <h1>Eläinhoitola</h1>
         <h3 id="paikka"></h3>
 
         <button onclick="tervehdi()">Katso tervehdys</button>
-        <button onclick="huuto()">Älä vaan paina tästä!</button>       
+        <button onclick="palvelut()">Palvelumme</button>
+        <button onclick="hinnasto()">Hinnasto</button>    
+        <button onclick="yhteystiedot()">Yheystiedot</button>  
+
+        <div id="sisältö"></div>
+
     </center>
+
+    <script src="sivu.js"></script>
 
     <script>
         function tervehdi() {
@@ -22,10 +28,6 @@
             document.getElementById("paikka").innerText = tervehdys
     } 
     
-        function huuto() {
-            let sniikki = "H Å I!"
-            alert(sniikki)
-    } 
 
     </script>
 
